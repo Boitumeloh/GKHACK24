@@ -1,0 +1,132 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+}
+
+/* Header */
+.header {
+    background-color: #333;
+    color: white;
+    padding: 15px;
+    text-align: center;
+}
+
+.title-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.back-button {
+    background: none;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+    margin-right: 20px;
+}
+
+.icons {
+    display: flex;
+    align-items: center;
+}
+
+.notification-icon, .cart-icon {
+    font-size: 24px;
+    margin-left: 20px;
+}
+
+/* Main Content */
+main {
+    padding: 20px;
+}
+
+/* Explore Section */
+.section-explore {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.event-title {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.event-card {
+    background-color: #e0e0e0;
+    width: 100%;
+    height: 100px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 180px;
+    border-radius: 10px;
+    /* margin-bottom: 10px; */
+}
+
+.event-icon {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    font-size: 20px;
+}
+
+.btn {
+    background-color: #333;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-bottom: 20px;
+}
+
+.explore-section {
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+}
+
+.explore-card {
+    background-color: #ddd;
+    width: 48%;
+    padding: 20px;
+    border-radius: 10px;
+    font-size: 20px;
+    text-align: center;
+}
+
+a {
+    color: black;
+}
+
+/* Categories Section */
+.section-categories {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.category-card {
+    background-color: #ddd;
+    padding: 30px;
+    border-radius: 10px;
+    text-align: center;
+    font-size: 18px;
+}
+
+/* login */
+
+
+

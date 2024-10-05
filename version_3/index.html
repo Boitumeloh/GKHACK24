@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kasi Event App</title>
+    <link rel="stylesheet" href="public/css/styles.css">
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</head>
+<body>
+    <!-- Navbar/Header Section -->
+    <header class="header">
+        <div class="title-section">
+            <button class="back-button">←</button>
+            <h1>KasiConnect</h1>
+            
+            <div class="icons">
+                <ion-icon name="notifications-outline" class="notification-icon"></ion-icon>
+                <ion-icon name="cart-outline" class="cart-icon"></ion-icon>
+                <!-- <span class="notification-icon">🔔</span>
+                <span class="cart-icon">🛒</span> -->
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <!-- First screen: Explore and Buy Tickets -->
+        <section class="section section-explore">
+            <p class="event-title">What’s poppin ko kasi!</p>
+            <div class="event-card">
+                <img src="public/img/event2.png" alt="event picture"> 
+                <ion-icon name="heart-outline" class="event-icon"></ion-icon>
+                
+            </div>
+            <br>
+            <!-- <button class="btn buy-ticket-btn">Buy Ticket</button> -->
+
+            <!-- Explore Section  -->
+            <div class="explore-section">
+                <a class="explore-card" href="views/events.html"><div >Events</div></a>
+                <a class="explore-card" href="views/services.html"><div>Services</div></a>
+            </div>
+            <br>
+            <br>
+            <h1><a href="views/login.html">Business Account</a></h1>
+        </section>
+
+<!-- <h4>Explore</h4>
+         Second screen: Event Categories
+        <section class="section section-categories">
+            <div class="category-card"><img src="culture1.jpg" alt="">Culture</div>
+            <div class="category-card">Amapiano & Experience</div>
+            <div class="category-card">Sites</div>
+            <div class="category-card">Kids Experience</div>
+            <div class="category-card">Businesses</div>
+        </section> -->
+    </main>
+
+    <script src="main.js"></script>
+</body>
+</html>
