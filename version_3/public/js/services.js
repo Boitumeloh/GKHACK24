@@ -69,3 +69,23 @@ document.addEventListener('DOMContentLoaded', () => {
     // Load services when the page is ready
     loadServices();
 });
+
+// services.js
+window.onload = () => {
+    const storedItems = JSON.parse(localStorage.getItem('items')) || [];
+    const servicesContainer = document.getElementById('servicesContainer');
+    
+    storedItems.forEach(item => {
+        if (item.type === "service") {
+            const serviceDiv = document.createElement('div');
+            serviceDiv.classList.add('service-item');
+            serviceDiv.innerHTML = `
+                <h3>${item.name}</h3>
+                <img src="${item.image}" alt="${item.name}" class="service-image">
+                <p>${item.description}</p>
+            `;
+            servicesContainer.appendChild(serviceDiv);
+        }
+    });
+};
+

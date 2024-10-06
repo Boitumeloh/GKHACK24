@@ -72,3 +72,22 @@ document.addEventListener("DOMContentLoaded", () => {
   // Load events when the page is ready
   loadEvents();
 });
+
+// events.js
+window.onload = () => {
+  const storedItems = JSON.parse(localStorage.getItem('items')) || [];
+  const eventsContainer = document.getElementById('eventsContainer');
+  
+  storedItems.forEach(item => {
+      if (item.type === "event") {
+          const eventDiv = document.createElement('div');
+          eventDiv.classList.add('event-item');
+          eventDiv.innerHTML = `
+              <h3>${item.name}</h3>
+              <img src="${item.image}" alt="${item.name}" class="event-image">
+              <p>${item.description}</p>
+          `;
+          eventsContainer.appendChild(eventDiv);
+      }
+  });
+};

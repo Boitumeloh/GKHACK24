@@ -20,6 +20,23 @@ body {
     gap: 20px;
 }
 
+.services-section, .events-section {
+    padding: 40px;
+    text-align: left;
+}
+
+.service-item, .event-item {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 15px;
+    margin: 10px 0;
+}
+
+.service-image, .event-image {
+    width: 100%;
+    border-radius: 5px;
+}
+
 .nav-bar a {
     color: white;
     text-decoration: none;
