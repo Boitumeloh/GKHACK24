@@ -14,8 +14,8 @@ document.addEventListener('DOMContentLoaded', () => {
             description: 'Secure reliable transportation services for your event guests.',
         },
         {
-            title: 'Security Services',
-            description: 'Ensure the safety of your event with trusted security services.',
+            title: 'Artisan Services',
+            description: 'Ensure the safety of your house with trusted maintanace services.',
         },
     ];
 
@@ -43,7 +43,18 @@ document.addEventListener('DOMContentLoaded', () => {
                 exploreButton.classList.add('btn');
                 exploreButton.addEventListener('click', () => {
                     // Placeholder action for exploring service
-                    alert(`You are exploring the service: ${service.title}`);
+                    if(service.title == 'Catering Services'){
+                        window.location.href = 'catering-services.html';
+                    }else if(service.title == 'Entertainment'){
+                        window.location.href = 'entertainment-services.html';
+                    }else if(service.title == 'Transport Services'){
+                        window.location.href = 'transport-services.html';
+                    }else if(service.title == 'Artisan Services'){
+                        window.location.href = 'artisan-services.html';
+                    }else{
+                        window.location.href = 'explore.html';
+                    }
+                    //alert(`You are exploring the service: ${service.title}`);
                 });
 
                 serviceCard.appendChild(serviceTitle);
