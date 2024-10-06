@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kasi Event App</title>
     <link rel="stylesheet" href="public/css/styles.css">
+    <link rel="stylesheet" href="C:\Users\MAKGALEMELA\Desktop\GKHACK24\GKPROJECT\version_3\public\css\styles2.css">
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 </head>
@@ -30,8 +31,19 @@
         <section class="section section-explore">
             <p class="event-title">What’s poppin ko kasi!</p>
             <div class="event-card">
-                <img src="public/img/event2.png" alt="event picture"> 
+
                 <ion-icon name="heart-outline" class="event-icon"></ion-icon>
+                <div class="slider">
+                    <div class="slides">
+                        <div class="slide active"><img src="public/img/event2.png" alt="Image 1"></div>
+                        <div class="slide"><img src="public/img/event2.png" alt="Image 2"></div>
+                        <div class="slide"><img src="public/img/event2.png" alt="Image 3"></div>
+                    </div>
+                    <button class="prev" onclick="changeSlide(-1)">&#10094;</button>
+                    <button class="next" onclick="changeSlide(1)">&#10095;</button>
+                </div>
+                <!-- <img src="public/img/event2.png" alt="event picture">  -->
+
                 
             </div>
             <br>
@@ -57,7 +69,9 @@
             <div class="category-card">Businesses</div>
         </section> -->
     </main>
+   
 
     <script src="main.js"></script>
+    <script src="C:\Users\MAKGALEMELA\Desktop\GKHACK24\GKPROJECT\version_3\public\js\script.js"></script>
 </body>
 </html>
